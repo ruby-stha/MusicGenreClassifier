@@ -1,0 +1,45 @@
+
+fieldset{
+    border: 0px !important;
+}
+fieldset img {
+    height: 94px;
+    width: 281px;
+    position: relative;
+    left: 35px;
+}
+.panel-heading {
+    padding: 5px 15px;
+}
+
+.panel-footer {
+    padding: 1px 15px;
+    color: #A0A0A0;
+}
+body {
+  background-image: url('../images/bg2.jpg');
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#memberPhotoContent{
+    position:fixed;
+    top: 50%;
+    left: 30%;
+    height: 245px;
+    width: 245px;
+}
+.panel-default>.panel-heading{
+    background-color:#428bca ;
+    border: 1px solid #428bca;
+    color:#fff;
+}
+.blink_me {
+    animation: blinker 1s linear ;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}

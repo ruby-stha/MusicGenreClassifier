@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/w3css.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='fonts') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap-theme.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-2.0.3.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <style>
+    #header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            color: white;
+            background-color: black;
+            opacity: 0.8;
+            z-index: 1;
+            padding-bottom: 12px;
+        }
+{#        ul {#}
+{#            list-style-type: none;#}
+{#            margin: 10px;#}
+{#            padding: 5px;#}
+{#            overflow: hidden;#}
+{#            background-color: #3c763d;#}
+{#            border-radius: 7px;#}
+{#        }#}
+{##}
+{#        li {#}
+{#            float: left;#}
+{#        }#}
+{##}
+{#        li a {#}
+{#            display: inline-block;#}
+{#            color: white;#}
+{#            text-align: center;#}
+{#            padding: 14px 16px;#}
+{#            text-decoration: none;#}
+{#        }#}
+{##}
+{#        li a:hover {#}
+{#            background-color: #777777;#}
+{#        }#}
+    </style>
+
+<nav id="header" class="nav nav-pills">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" style="color: #FF9B22;" href="{{ url_for('start') }}"><h1 style="font-family:cursive; font-size: 25px; font-weight: 500;"><b><img src="{{ url_for('static', filename='images/icon.png') }}" height="50px" width="50px;"> Automatic Music Genre Classification</b></h1></a>
+        </div>
+        <br/>
+        <ul class="nav navbar-nav" style="float:right;padding-top: 10px;">
+            <li><a style="color: #FF9B22 ;" href="{{ url_for('analysis') }}"><b>Genre Specgrams</b></a></li>
+            <li><a style="color: #FF9B22 ;" href="{{ url_for('start') }}"><b>Training and Testing Panel</b></a></li>
+            <li><a style="color: #FF9B22 ;" href="{{ url_for('userPanel')}}"><b>User Panel</b></a></li>
+            <li><a style="color: #FF9B22 ;" href="{{ url_for('about_AMGC')}}"><b>About</b></a></li>
+        </ul>
+    </div>
+</nav>

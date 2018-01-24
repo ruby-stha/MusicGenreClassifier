@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Genre Specgrams</title>
+</head>
+<body>
+{% include '_header.html' %}
+{% include '_footer.html' %}
+<div align="center" style="padding-top: 120px; padding-bottom: 80px;">
+<img src="{{ url_for('static', filename='images/genre.png') }}" height="100px" width="45%">
+    <h2><u><b>Genre Specgrams</b></u></h2>
+    <table>
+        {% for genreM in genre %}
+            <tr>
+                <td colspan="3"><h3 align="center"><b>{{ genreM.upper() }} </b></h3></td>
+            </tr>
+            <tr>
+                    <td><img height="300" width="400" src='{{"..\\static\\temp\\"+genreM+"0.png"}}'></td>
+                    <td><img height="300" width="400" src='{{"..\\static\\temp\\"+genreM+"1.png" }}'></td>
+                    <td><img height="300" width="400" src='{{"..\\static\\temp\\"+genreM+"2.png" }}'></td>
+            </tr>
+        {% endfor %}
+    </table>
+
+</div>
+</body>
+</html>

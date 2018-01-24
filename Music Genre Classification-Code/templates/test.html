@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload File</title>
+
+    <script>
+        $(document).ready(function () {
+            console.log("here...");
+            if ($("#testMsg").html()!=""){
+                enableViewTestResult();
+            }
+        });
+        function showTestResult(){
+            $('#confusion_matrix_modal').modal('show');
+        }
+        function enableViewTestResult() {
+            document.getElementById("confusion_m").disabled=false;
+            return true;
+        }
+
+    </script>
+</head>
+<body>
+{% include '_header.html' %}
+{#<form action="http://127.0.0.1:5000/login" method="POST" enctype="multipart/form-data">#}
+{#    <p>Select Music: <input type="file" name="music-file" id="music-file"/></p>#}
+{#    <p><input type="submit" value="Submit"></p>#}
+{#</form>#}
+<br/>
+<hr>
+<div class="row">
+    <div class="col-sm-6">
+        <div style="border:1px outset olivedrab; border-bottom-color: transparent; border-top-color: transparent; border-radius: 8px; padding: 5px;margin: 10px;" align="center">
+            <h2><u>Training Panel</u></h2><br/>
+            <h4>{{ computeMessage }}</h4>
+            <form action="http://127.0.0.1:5000/computeFeatures" method="post">
+                <p><input type="submit" value="Compute Features" class="btn btn-primary"></p>
+            </form>
+            <h4>{{ trainMessage }}</h4>
+             <form action="http://127.0.0.1:5000/train" method="post">
+                <p><input type="submit" value="Get Features and Train Classifier" class="btn btn-primary"></p>
+             </form>
+            <br/>
+            <br/>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div style="border:1px outset olivedrab; border-radius: 8px;   border-bottom-color: transparent; border-top-color: transparent; padding: 5px;margin: 10px;" align="center">
+            <h2><u>Testing Panel</u></h2><br/>
+            <input type="button" id="confusion_m" name="confusion_m" value="View Test Result" class="btn btn-primary" disabled="disabled" onclick="showTestResult()"/>
+            <form action="http://127.0.0.1:5000/test" method="post">
+                <h4 id="testMsg">{{ testMessage }}</h4>
+                <p><input type="submit" value="Test Classifier" id="testClassifier" class="btn btn-primary"></p>
+            </form>
+            <br/><br/>
+        </div>
+    </div>
+</div>
+<br/><hr>
+<div class="modal fade" id="confusion_matrix_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">AMGC Test Result</h4>
+            </div>
+            <div class="modal-body">
+                <p><em>The test has been carried out on 20 music of each of the five genres listed below.</em></p>
+                <div id="testResult">
+                    <table class="table table-bordered">
+                        <tr>
+                            <td>
+                               <table class="table tab-content">
+                               <tr><td><b>Genres</b></td></tr>
+                                {% for genre in genres %}
+                                    <tr><td><b>{{ genre }}</b></td></tr>
+                                {% endfor %}
+                                </table>
+                            </td>
+                             <td>
+                                 <table class="table tab-content">
+                                     <thead>
+                                        {% for genre in genres %}
+                                            <th>{{ genre }}</th>
+                                        {% endfor %}
+                                    </thead>
+                                    <tbody>
+                                        {% for val in confusion_m %}
+                                        <tr>
+                                            <td>{{ val[0] }}</td>
+                                            <td>{{ val[1] }}</td>
+                                            <td>{{ val[2] }}</td>
+                                            <td>{{ val[3] }}</td>
+                                            <td>{{ val[4] }}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                             </td>
+                        </tr>
+                    </table>
+                    <h4>Accuracy : {{ accuracy }} %</h4>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body style="background-image: url({{ url_for('static', filename='images/musicB.jpg') }}); background-size: cover;max-height: 100%; max-width: 100%">
+{% include '_header.html' %}
+{% include '_footer.html' %}
+<div class="row" style="padding-top: 110px;padding-left: 50px; padding-bottom: 150px;">
+    <div class="col-sm-4">
+        <div class="w3-container" style="height: 320px; width: 600px;">
+            <h3><b>Genres</b></h3>
+
+            <div class="w3-card-12" style="width:50%;">
+                <img src="{{ url_for('static', filename='images/genresM.jpg') }}" alt="Specgrams" style="height: 310px;width: 100%">
+                <div class="w3-container w3-center" style="background-color:moccasin; ">
+                    <br/>
+                    <p><b>You can view the genre specgrams of five genres here.</b></p>
+                    <p><a href="{{ url_for('analysis') }}" class="btn btn-primary">View Specgrams</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="w3-container" style="height: 320px; width: 600px; border-radius: 6px;">
+            <h3><b>User Panel</b></h3>
+            <div class="w3-card-12" style="width:50%;">
+                <img src="{{ url_for('static', filename='images/genre_find.jpg') }}" alt="Find" style="height: 320px;width: 100%">
+                <div class="w3-container w3-center" style="background-color:moccasin; ">
+                    <br/>
+                    <p><b>Upload song to discover its genre here.</b></p>
+                    <p><a href="{{ url_for('userPanel') }}" class="btn btn-primary">Discover Genre</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="col-sm-4">
+        <div class="w3-container" style="height: 320px; width: 600px; border-radius: 6px;">
+            <h3><b>About</b></h3>
+            <div class="w3-card-12" style="width:50%;">
+                <img src="{{ url_for('static', filename='images/about_app.jpg') }}" alt="About" style="height: 320px;width: 100%">
+                <div class="w3-container w3-center" style="background-color:moccasin; ">
+                    <br/>
+                    <p><b>Get to know more about this app here.</b></p>
+                    <p><a href="{{ url_for('about_AMGC') }}" class="btn btn-primary">Know About App</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

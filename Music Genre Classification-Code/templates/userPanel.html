@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Panel</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap-theme.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='jquery-2.0.3.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='bootstrap.min.js')}}"></script>
+</head>
+<body>
+{% include '_header.html' %}
+<br/><br/><br/>
+<div id="userP" align="center">
+    <form action="http://127.0.0.1:5000/login" method="post" enctype="multipart/form-data">
+           <h4>Upload Music File </h4> <br/><input type="file" name="music-file" class="btn-primary"><br/>
+           <p><input type="submit" value="Process" class="btn btn-primary"></p>
+    </form>
+</div>
+</body>
+</html>
