@@ -1,6 +1,6 @@
 # About Automatic Music Genre Classifier
 
-Full Documentation Here: 
+Full Documentation Here: https://goo.gl/WLmjMH
 
 # Project Summary
 
