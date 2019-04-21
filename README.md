@@ -15,10 +15,6 @@ In this project, a stepping stone for automatic music genre categorization of va
 
 Dataset Taken From: http://marsyasweb.appspot.com/download/data_sets/ (Download the GTZAN genre collection)
 
-# Code
-
-Code Available:https://goo.gl/rPRFu9
-
 # Recommendation
 
 The accuracy can be increased above 74.0% by consideration of additional features such as beat (calculated with the use of FFT), pitch and a better algorithm over FFT for nonstationary music files, which is Discrete Wavelet Transform (DWT). Moreover, instead of using 30 seconds music files of GTZAN Music Dataset, more time duration of the music files can be used. 
