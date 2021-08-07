@@ -13,7 +13,7 @@ In this project, a stepping stone for automatic music genre categorization of va
 
 # Data Source
 
-Dataset Taken From: http://marsyasweb.appspot.com/download/data_sets/ (Download the GTZAN genre collection)
+Dataset Taken From: http://marsyas.info/downloads/datasets.html (Download the GTZAN genre collection)
 
 # Recommendation
 
