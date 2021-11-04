@@ -13,7 +13,11 @@ In this project, a stepping stone for automatic music genre categorization of va
 
 # Data Source
 
-Dataset Taken From: http://marsyas.info/downloads/datasets.html (Download the GTZAN genre collection)
+Dataset Taken From: [Marsyas.info] (http://marsyas.info/downloads/datasets.html) (Download the GTZAN genre collection)
+
+# Result
+
+Details have been posted in the Theoretical Document [here](https://github.com/ruby-stha/MusicGenreClassifier/blob/dce3b18a337c2ab730678bbc9b5a740328edd21f/Theoretical%20Documentation%20on%20Automatic%20Music%20Genre%20Classifier.pdf)
 
 # Conclusion
 
