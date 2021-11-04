@@ -2,7 +2,7 @@
 
 # Project Summary
 
-In this project, a stepping stone for automatic music genre categorization of vast number of music files available in digital form online or offline has been developed. Out of the various techniques of music genre recognition, content based technique has been used to automatically label the particular user uploaded song into one of five distinct genres: Classical, Pop, Metal, Jazz, and Blues. Digital signal processing techniques of Fast Fourier Transform and Mel-Frequency Cepstral Coefficients have been used to generate feature values of feature vector, which is then fed into the classifier developed using Support Vector Machine, in order to classify user input song. The training and testing of the system has been performed successfully obtaining an accuracy of 74.0%, which is significant in the field of music analysis. Training has been carried out using 80 music clips of each of the five genres, and testing, using 20 music clips of each of the five genres. GTZAN Music Dataset, a popular Western music dataset prepared for music analysis, has been used during training and testing; hence, this system works well only with Western music files. The system has been implemented with two graphical user interfaces: one for admin (training and testing) and another for user (uploading music file and finding genre) using Python programming language and Flask framework. 
+In this project, a stepping stone for automatic music genre categorization of vast number of music files available in digital form online or offline has been developed. Out of the various techniques of music genre recognition, content based technique has been used to automatically label the particular user uploaded song into one of five distinct genres: Classical, Pop, Metal, Jazz, and Blues. Digital signal processing techniques of Fast Fourier Transform and Mel-Frequency Cepstral Coefficients have been used to generate feature vector, which is then fed into the classifier developed using Support Vector Machine, in order to classify user input song. The training and testing of the system has been performed successfully obtaining an accuracy of 74.0%, which is significant in the field of music analysis. Training has been carried out using 80 music clips of each of the five genres, and testing, using 20 music clips of each of the five genres. GTZAN Music Dataset, a popular Western music dataset prepared for music analysis, has been used during training and testing; hence, this system works well only with Western music files. The system has been implemented with two graphical user interfaces: one for admin (training and testing) and another for user (uploading music file and finding genre) using Python programming language and Flask framework. 
 
 # Software Modules Used
 
@@ -17,7 +17,7 @@ Dataset Taken From: [Marsyas.info](http://marsyas.info/downloads/datasets.html) 
 
 # Result
 
-Details have been posted in the Theoretical Document [here](https://github.com/ruby-stha/MusicGenreClassifier/blob/69365f36bf34c1647354b4832186286d181241e1/Theoretical%20Documentation%20on%20Automatic%20Music%20Genre%20Classifier.pdf).
+Details have been mentioned in the Theoretical Document [here](https://github.com/ruby-stha/MusicGenreClassifier/blob/69365f36bf34c1647354b4832186286d181241e1/Theoretical%20Documentation%20on%20Automatic%20Music%20Genre%20Classifier.pdf).
 
 # Conclusion
 
