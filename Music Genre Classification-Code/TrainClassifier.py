@@ -35,14 +35,13 @@ def test():
         if ans==labels[i]:
             count=count+1
         result.append(ans)
-    print(result)
-    print(labels)
     accuracy=count/len(labels)
     cm=confusion_matrix(labels,result)
     print("confusion matrix:")
     print(cm)
     plot_confusion_matrix(cm, MainServices.CHOSEN_GENRES, "Confusion Matrix")
-    print(count/len(labels))
+    print("Accuracy val:")
+    print(accuracy)
     print("success!")
     return cm, accuracy
 
