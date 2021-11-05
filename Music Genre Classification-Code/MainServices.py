@@ -30,18 +30,6 @@ def get_window(N):
         window.append(val)
     return window
 
-# def make_fft(file):
-#     convert_16_bit = float(2 ** 15)
-#     sample_rate, X = scipy.io.wavfile.read(file)
-#     X = X / convert_16_bit
-#     X = np.array(X[:1000])
-#     fft_feature = fft(X)
-#     print(len(fft_feature))
-#     plt.plot(np.array(range(1,len(fft_feature)+1,1)), fft_feature)
-#     plt.xlabel("Sample Points [1000 Points]")
-#     plt.ylabel("FFT Values")
-#     return plt
-
 def save_figure(file, file_name, dir):
     f = dir+file_name+".png"
     file.savefig(f, dpi=100)
