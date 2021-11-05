@@ -25,7 +25,6 @@ def root_url():
 
 @app.route('/start/')
 def start():
-    # return render_template('test.html')
     return render_template('dashboard.html')
 
 @app.route('/about_AMGC/')
@@ -42,18 +41,11 @@ def computeFeatures():
     computeMessage="Features Computed! Success."
     return render_template('test.html', computeMessage=computeMessage)
 
-# @app.route('/getFeatures/')
-# def getFeatures():
-#     MusicFeatureCollection.getFeatures("train")
-#     getMmessage = "Features Received! Success."
-#     return render_template('test.html', getMmessage=getMmessage)
-
 @app.route('/train/')
 def train():
       TrainClassifier.train()
       trainMessage="Training Completed! Success."
       return render_template('test.html', trainMessage=trainMessage)
-
 
 @app.route('/test/')
 def test():
