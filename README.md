@@ -17,7 +17,7 @@ Dataset Taken From: [Marsyas.info](http://marsyas.info/downloads/datasets.html) 
 
 ## Result
 
-Details have been mentioned in the Theoretical Document [here](https://github.com/ruby-stha/MusicGenreClassifier/blob/9337ab4fc7403a8368e1476a52c8b76f32c9924f/Theoretical%20Documentation%20on%20Automatic%20Music%20Genre%20Classifier.pdf).
+Details have been mentioned in the Theoretical Document [here](https://ruby-shrestha.000webhostapp.com/wp-content/uploads/2021/12/Theoretical-Documentation-on-Automatic-Music-Genre-Classifier.pdf).
 
 ## Conclusion
 
