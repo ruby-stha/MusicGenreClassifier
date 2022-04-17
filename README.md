@@ -17,7 +17,7 @@ Dataset Taken From: [Marsyas.info](http://marsyas.info/downloads/datasets.html) 
 
 ## Result
 
-Details have been mentioned in the [Theoretical Document](https://drive.google.com/file/d/1jRjHKu79V25XGU5JPKNTiO2Gy6nCc7rB/view?usp=sharing).
+Details have been mentioned in the [Theoretical Documentation](https://drive.google.com/file/d/1jRjHKu79V25XGU5JPKNTiO2Gy6nCc7rB/view?usp=sharing).
 
 ## Conclusion
 
